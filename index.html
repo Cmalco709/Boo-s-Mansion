@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Doors</title>
+    <style>
+        /* Main Background */
+.container{
+    height: 800px;
+    width: 1550px;
+    margin-top: -22px;
+    margin-left: -8px;
+/*     background-image: url("https://hips.hearstapps.com/hmg-prod/images/most-haunted-places-in-america-1563377250.jpg"); */
+    background-size: 1200px 500px;
+    position:absolute;
+  background: url("https://hips.hearstapps.com/hmg-prod/images/most-haunted-places-in-america-1563377250.jpg");
+    background-size: auto 100%;
+  background-repeat: no-repeat;
+  left: 180px;
+
+}
+
+/* Black Death Background */
+#container1{
+    height: 800px;
+    width: 1550px;
+    margin-top: -22px;
+    margin-left: -8px;
+    position:absolute;
+    background-color: black;
+    display:none;
+  
+
+}
+
+/* Money Background */
+#container2{
+    height: 800px;
+    width: 1550px;
+    margin-top: -22px;
+    margin-left: -8px;
+    position:absolute;
+    background-color: green;
+    display:none;
+  
+
+}
+
+/* Start Adventure Button */
+#start-a{
+  position: absolute;
+  top: 70px;
+  left: 626px;
+}
+
+/* Start Adventure Button */
+#start-a1{
+  position: absolute;
+  top: 700px;
+  left: 600px;
+  display:none;
+}
+
+/* Name Input */
+#name-input{
+  position: absolute;
+  top: 70px;
+  left: 450px;
+}
+
+/* Page Sizer */
+html{
+  height: 200px;
+  width: 1200px;
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Hello Message */
+#hello-message{
+  position: absolute;
+  top: 0px;
+  left: 21%;
+  text-align:center;
+  font-size: 6em;
+  color:red;
+  animation: upAndDown 4s ease-in-out infinite
+}
+
+/* Bouncing Arrow Left */
+#arrow-left{
+  display: none;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 560px;
+  left:120px;
+  animation: upAndDown 4s ease-in-out infinite
+  
+}
+
+/* Bouncing Arrow Right*/
+#arrow-right{
+  display: none;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 560px;
+  left:970px;
+  animation: upAndDown 4s ease-in-out infinite
+  
+}
+
+/* H1 */
+h1{
+  color:white;
+  position: absolute;
+  left: 410px
+}
+
+/* H2 */
+h2#extra-text{
+  color:white;
+  position: absolute;
+  left: 510px;
+  top: 400px;
+}
+
+h2#extra-text2{
+  color:white;
+  position: absolute;
+  left: 435px;
+  top: 200px;
+}
+
+h2#extra-text3{
+  color:white;
+  position: absolute;
+  left: 450px;
+  top: 250px;
+}
+
+h2#extra-text4{
+  color:white;
+  position: absolute;
+  left: 490px;
+  top: 300px;
+}
+
+h2#extra-text5{
+  color:white;
+  position: absolute;
+  left: 512px;
+  top: 350px;
+}
+
+p{
+  position: absolute;
+  color:black;
+  width:200px;
+  text-align: center;
+  left: 490px;
+  font-size: 1.1em;
+  display: none;
+  background-color:white;
+  border-radius:5px;
+  top:450px;
+  
+  
+}
+
+html{
+  text-align: center
+}
+
+#boo-ghost{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 345px;
+  left: 530px;
+  animation: booGhostMove 4s ease-in-out infinite
+}
+
+#boo-ghost1{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 345px;
+  left: 530px;
+  animation: booGhostMove 4s ease-in-out infinite;
+  display: none;
+}
+
+#boo-ghost-shadow{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 475px;
+  left: 530px;
+  animation: booGhostMove 4s ease-in-out infinite
+}
+
+#money{
+  position: absolute;
+  top: 220px;
+  left: 280px;
+  display: none;
+   animation: moneyMove 3s linear infinite
+}
+
+@keyframes booGhostMove{
+  0%{
+    transform: scale(0.01);
+  }
+  20%{
+    transform: scale(3);
+  }
+  50%{
+    transform: scale(0.01);
+  }
+  100%{
+    transform: scale(0.01);
+  }
+  
+}
+
+@keyframes moneyMove{
+  0%{
+   transform: scale(0.01) rotate(0deg);
+  }
+  33%{
+    transform: scale(0.5) rotate(60deg);
+  }
+  66%{
+    transform: scale(0.5) rotate(118deg);
+
+  }
+  100%{
+    transform: scale(0.01) rotate(180deg);
+  }
+  
+}
+
+@keyframes rockText{
+  0%{
+   transfom: rotate(0deg);
+  }
+  25%{
+    transfom: rotate(20deg);
+  }
+  50%{
+    transfom: rotate(0deg);
+
+  }
+  75%{
+    transfom: rotate(-20deg);
+
+  }
+  100%{
+    transfom: rotate(0deg);
+  }
+  
+}
+
+@keyframes upAndDown{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-50px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+
+h2{
+  display:none;
+}
+
+#l-button{
+  position: absolute;
+  top: 600px;
+  left:300px;
+  display:none;
+}
+
+#r-button{
+  position: absolute;
+  top: 600px;
+  left:800px;
+  display:none;
+}
+
+#death{
+  font-size: 4em;
+  color:red;
+  position: absolute;
+  left: 500px;
+  top: 50px
+}
+
+#life{
+  font-size: 4em;
+  color:#8CE78B;
+  position: absolute;
+  left: 310px;
+  top: 0px;
+  display: none;
+  
+}
+
+#try-again{
+  position:absolute;
+  top:620px;
+  left:570px;
+  display:none;
+  z-index: 1000;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--  Title  -->
+        <h1 id="welcome">Welcome to Boo's Mansion</h1>
+        
+        <!--  Input  -->
+        <input id="name-input"type="text" placeholder="Type Your Name" />
+        
+        <!--  Start Adventure Button  -->
+        <button type="button" id="start-a"onclick="sayHello()">Start Adventure</button>
+        
+            <!--  Start Adventure Button  -->
+        <button type="button" id="start-a1"onclick="sayHello()">Try Again</button>
+        
+        <!--  Choose Left Button  -->
+        <button type="button" onclick="choseLeft()" id="l-button">Choose Left</button>
+      
+        <!--  Choose Right Button  -->
+        <button type="button" onclick="choseRight()" id="r-button">Choose Right</button>
+        
+        <!--  Ghost Image  -->
+        <img id="boo-ghost" src = "https://freepngimg.com/save/114501-king-photos-boo-hq-image-free/840x874">
+        
+        <button type="button" id="try-again"onclick="restart()">Try Again</button>
+      
+        
+        <!--  Ghost Shadow  -->
+        <img id="boo-ghost-shadow"src = 
+         "https://static.vecteezy.com/system/resources/previews/013/169/100/original/oval-shadow-for-object-or-product-png.png">
+        
+        
+        <!--  Arrow Left  -->
+        <img id="arrow-left"src = "https://www.freeiconspng.com/thumbs/white-arrow-png/curved-white-arrow-png-0.png">
+        
+        <!--  Arrow Left  -->
+        <img id="arrow-right"src = "https://www.freeiconspng.com/thumbs/white-arrow-png/curved-white-arrow-png-0.png">
+        
+        <!--  Hello Message  -->
+        <h1 id="hello-message"></h1>
+        
+      
+        
+        <!--  Extra Text  -->
+        <h2 id="extra-text">Choose A Path:</h2>
+        
+         <!--  Extra Text  -->
+        <h2 id="extra-text2">Number of choices this session: 0</h2>
+        
+         <!--  Extra Text  -->
+        <h2 id="extra-text3">Correct choices this session: 0</h2>
+        
+         <!--  Extra Text  -->
+        <h2 id="extra-text4">Percentage correct: N/A%</h2>
+        
+        <h2 id="extra-text5">Total Money: $0.00</h2>
+        
+          <!--  Extra Text 1  -->
+        <p id="extra-text1">There Are Two Paths. Behind one is Boo, Behind the Other is $100. Good Luck<p>
+        
+        <div id="container2"></div>
+        
+        
+        
+             <!--  Ghost Image  -->
+        <img id="money" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/USA_100_Dollar_Bill_Series2009_Obverse.png/640px-USA_100_Dollar_Bill_Series2009_Obverse.png">
+        
+      
+           <!--  Hello Message  -->
+        <h1 id="life">Correct: Here's $100</h1>
+        
+        
+        <div id="container1">
+          
+            <!--  Ghost Image  -->
+        <img id="boo-ghost1" src = "https://freepngimg.com/save/114501-king-photos-boo-hq-image-free/840x874">
+          
+       
+          
+         <!--  Hello Message  -->
+        <h1 id="death">You Died</h1>
+        
+          
+        <button type="button" id="try-again"onclick="restart()">Try Again</button>
+          
+        
+        
+      
+        
+      </div>
+      
+      
+    <script>
+        const nameInput = document.getElementById('name-input')
+const helloMessage = document.getElementById('hello-message')
+const extraText = document.getElementById('extra-text')
+const extraText1 = document.getElementById('extra-text1')
+const extraText2 = document.getElementById('extra-text2')
+const extraText3 = document.getElementById('extra-text3')
+const extraText4 = document.getElementById('extra-text4')
+const extraText5 = document.getElementById('extra-text5')
+const scaryGhost = document.getElementById('boo-ghost')
+const scaryGhostShadow = document.getElementById('boo-ghost-shadow')
+const arrowLeft = document.getElementById('arrow-left')
+const arrowRight = document.getElementById('arrow-right')
+const rButton = document.getElementById('r-button')
+const lButton = document.getElementById('l-button')
+const scaryGhost1 = document.getElementById('boo-ghost1')
+const black = document.getElementById('container1')
+const white = document.getElementById('container2')
+const death = document.getElementById('death')
+const life = document.getElementById('life')
+const tryAgain = document.getElementById('start-a1')
+const tryAgain1 = document.getElementById('try-again')
+const money = document.getElementById('money')
+const welcome = document.getElementById('welcome')
+const startA = document.getElementById("start-a")
+
+function sayHello(){
+  const userName =  nameInput.value;
+  console.log(userName);
+  helloMessage.textContent = "Hello " + userName + "!";
+
+  extraText.style.display="block";
+  extraText1.style.display="block";
+  extraText2.style.display="block";
+  extraText3.style.display="block";
+  extraText4.style.display="block";
+  extraText5.style.display="block";
+  scaryGhost.style.display = "none";
+  scaryGhostShadow.style.display = "none";
+  arrowLeft.style.display="block";
+  arrowRight.style.display="block";
+  lButton.style.display="block";
+  rButton.style.display="block";
+  welcome.style.display = "none";
+  startA.style.display = "none";
+  nameInput.style.display = "none";
+}
+
+
+let extra2 = 0
+let correct = 0
+let temp = 0
+let moneyC = 0
+function choseLeft(){
+  extra2 = extra2 + 1
+  temp = Math.random()
+  temp = Math.round(temp)
+  console.log(temp)
+  if(temp==0){
+    moneyC=0
+    scaryGhost1.style.display = "block";
+    black.style.display="block";
+    death.style.display="block";
+    tryAgain.style.display="block";
+    tryAgain1.style.display="block";
+    extraText5.textContent = "Total Money: $"+moneyC;
+  } else{
+    moneyC += 100
+    correct ++
+    money.style.display="block";
+    extraText3.textContent = "Correct choices this session: "+correct;
+    extraText5.textContent = "Total Money: $"+ moneyC;
+    tryAgain.style.left="";
+    tryAgain.style.display="block";
+    tryAgain1.style.display="block";
+    white.style.display="block";
+    life.style.display="block";
+  }
+  extraText2.textContent = "Number of choices this session: " + extra2;
+  extraText4.textContent = "Percentage correct: " + Math.floor((correct/extra2)*100)+"%";
+}
+
+function choseRight(){
+  extra2 = extra2 + 1
+  temp = Math.random()
+  temp = Math.round(temp)
+  console.log(temp)
+  if(temp==0){
+    moneyC=0
+    scaryGhost1.style.display = "block";
+    black.style.display="block";
+    death.style.display="block";
+    tryAgain.style.display="block";
+    tryAgain1.style.display="block";
+    extraText5.textContent = "Total Money: $"+moneyC;
+  } else{
+    moneyC += 100
+    correct ++
+    money.style.display="block";
+    extraText3.textContent = "Correct choices this session: "+correct;
+    extraText5.textContent = "Total Money: $"+moneyC;
+    tryAgain.style.display="block";
+    tryAgain1.style.display="block";
+    white.style.display="block";
+    life.style.display="block";
+  }
+  extraText2.textContent = "Number of choices this session: " + extra2;
+  extraText4.textContent = "Percentage correct: " + Math.floor((correct/extra2)*100)+"%";
+}
+
+
+function restart(){
+    scaryGhost1.style.display = "none";
+    black.style.display="none";
+    death.style.display="none";
+    money.style.display="none";
+    tryAgain1.style.display="none";
+    white.style.display="none";
+    life.style.display="none";
+}
+
+    </script>
+</body>
+</html>
